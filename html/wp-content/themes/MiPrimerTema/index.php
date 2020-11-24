@@ -8,21 +8,28 @@
 </head>
 <body>
 <?php get_header(); ?>
-
+<?php get_sidebar(); ?>
 <?php
 if ( have_posts() ) :
-    while ( have_posts() ) :
-        the_post();
-	    the_title('<H3> Titulo:', '</H3>');
-        the_post_thumbnail('thumbnail');
-        ?>
 
-        <h1> <?php the_excerpt(); ?> </h1>
+    while ( have_posts() ) :
+	    the_post();
+	    the_post_thumbnail('thumbnail '); ?>
+        <small><?php  the_author(); the_time(' H:i, j  F Y')  ?></small>
+<?php
+	    the_title('<H1> Titulo:', '</H1>');
+	    ?>
+
+        <h3> <?php the_excerpt(); ?> </h3>
 
 <?php
+
         the_content();
 	    wp_link_pages();
-	    edit_post_link();
+
+	    //edit_post_link('Editar ','','<strong>||</strong>');
+	    //comments_popup_link(' Sin Comentarios', '1 Comentario', '% Comentarios');
+
     endwhile;
 
 	if ( get_next_posts_link() ) {
