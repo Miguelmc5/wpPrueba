@@ -5,4 +5,4 @@
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size(1550, 1550);
+set_post_thumbnail_size(1500, 150);

@@ -2,11 +2,9 @@
     <div id="footerimg">
 
         <div class="description">
-
+            <small><?php  the_author(); the_time(' H:i, j  F Y')  ?></small>
         </div>
     </div>
 </div>
 
-<?php
 
-echo "<h1> FOOTERRRRR </h1>";

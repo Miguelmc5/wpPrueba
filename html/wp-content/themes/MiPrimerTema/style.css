@@ -24,14 +24,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding: 15px 10px 15px 60px;
 }
 
-
 body {
     background-color: #2ca3b1;
 }
 
+#sidebar{
+    margin-left: 40%;
+    margin-right: 40%;
+}
 
-
-
+#footer{
+    background: #de8d44;
+    border-bottom: solid 3px #11bddb;
+    border-left: solid 3px #11bddb;
+    border-right: solid 3px #11bddb;
+    border-top: solid 3px #11bddb;
+    letter-spacing: 0.2em;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 15px 10px 15px 60px;
+}
 
 
 
